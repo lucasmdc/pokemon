@@ -1,5 +1,5 @@
 const _api =  {
-    _baseURL: process.env.REACT_APP_API,
+    _baseURL: 'https://pokeapi.co/api/v2/',
     _headers: {
         'Cache-Control': 'no-cache'
     },

@@ -1,4 +1,4 @@
-import _api from "./fetch"
+import _api from "./axios"
 
 const api = {
     _api,
