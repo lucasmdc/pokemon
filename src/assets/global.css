@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active,
+a:hover, 
+a:visited {
+    color: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+    outline: none;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+
+img {
+    max-width: 100%;
+}
+
+#root {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.grass-theme {
+    background-color: #97cba9;
+}
+
+.water-theme {
+    background-color: #668ba4;
+}
+
+.fire-theme {
+    background-color: #fdb44b;
+}
+
+.lightning-theme {
+    background-color: #fcff82;
+}
+
+.disabled {
+    opacity: 0.5;
+}

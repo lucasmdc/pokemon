@@ -1,0 +1,5 @@
+@media screen and (min-width: 800px) { 
+    .character-details__play {
+        margin-bottom: 90px;
+    }
+}

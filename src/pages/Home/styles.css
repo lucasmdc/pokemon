@@ -1,0 +1,63 @@
+.home {
+    align-self: center;
+    text-align: center;
+}
+
+.home__greetings__box {
+    margin-bottom: 54px;
+}
+
+.home__title {
+    color: #2C97D1;
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.home__brand {
+    display: inline-block;
+}
+
+.home__subtitle {
+    color: #2C97D1;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 4.7px;
+    line-height: 1.21429;
+    margin: 24px 0;
+}
+
+.home__start {
+    background-color: #2C97D1;
+    color: #FFF;
+    font-size: 18px;
+    line-height: 1.23;
+    text-align: center;
+    width: 189px;
+}
+
+@media screen and (min-width: 800px) {
+    .home {
+        align-self: stretch;
+        margin-top: 210px;
+    }
+
+    .home__greetings {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 210px);
+        justify-content: space-between;
+        max-height: 446px;
+        min-height: 340px;
+        padding-bottom: 70px;
+    }
+
+    .home__greetings__box {
+        margin-bottom: 0;
+    }
+
+    .home__title {
+        font-size: 72px;
+    }
+
+}

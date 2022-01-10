@@ -1,0 +1,25 @@
+/* Commom */
+
+.base-button {
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    line-height: 1.21875;
+    min-height: 56px;
+    padding: 8px 12px;
+}
+
+/* Dark */
+
+.dark-side .base-button {
+    background-color: #FFF;
+    color: #2A2A2A;
+}
+
+/* Ligth */
+
+.light-side .base-button {
+    background-color: #2A2A2A;
+    color: #FBFE63;
+}
+

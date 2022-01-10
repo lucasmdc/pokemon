@@ -1,0 +1,55 @@
+/* Commom */
+
+.character-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 36px;
+    width: 100%;
+}
+
+.character-details__header-page {
+    align-self: start;
+    width: 100%;
+}
+
+.character-details__content-page {
+    text-align: center;
+    width: 100%;
+}
+
+.character-details__character {
+    margin-bottom: 36px;
+}
+
+.character-details__character__image {
+    background-color: #ffffff8f;
+    border-radius: 50%;
+    max-width: 215px;
+    padding: 24px;
+    width: 100%;
+}
+
+.character-details__character__description {
+    font-size: 36px;
+    line-height: 1.23;
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 800px) {
+    .character-details__character__image { 
+        max-width: none;
+        width: auto;
+    }
+
+    .character-details__content-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .character-details__character {
+        order: 1;
+        width: 100%;
+    }
+}
+

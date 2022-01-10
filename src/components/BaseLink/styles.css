@@ -1,0 +1,35 @@
+
+/* Commom */
+.base-link {
+    display: inline-block;
+}
+
+.base-link__box {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    padding: 8px;
+}
+
+.base-link__icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.base-link__text {
+    font-size: 18px;
+    padding-left: 8px;
+}
+
+.base-link {
+    color: #2A2A2A;
+}
+
+.base-link__icon {
+    background-image: url("../../assets/icons/arrow-back-icon-ligth.svg");
+}
+
