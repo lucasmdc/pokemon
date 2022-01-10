@@ -6,7 +6,7 @@ import Home from 'pages/Home'
 
 export default function routes() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Route component={ Home } path="/" exact/>
             <Route component={ CharacterDetail } path="/character-details"/>  
         </BrowserRouter>
