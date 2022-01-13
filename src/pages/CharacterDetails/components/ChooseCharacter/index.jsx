@@ -9,31 +9,31 @@ import { ThemeContext } from '../../../../provider/theme'
 
 
 const ChooseCharacter = props => {
-	const { themeDispatch } = useContext(ThemeContext)
-	const [disable, setDisable] = useState(false)
+  const { themeDispatch } = useContext(ThemeContext)
+  const [disable, setDisable] = useState(false)
 
-	async function handleClick() {
-		setDisable(true)
-		const { name } = await getRandomCharacter()
+  async function handleClick() {
+    setDisable(true)
+    const { name } = await getRandomCharacter()
             
-		themeDispatch({type: 'setName', payload:name })
+    themeDispatch({type: 'setName', payload:name })
         
-		setDisable(false)
+    setDisable(false)
         
-		if (props.onAfterChooseCharacterDone) {
-			props.onAfterChooseCharacterDone()
-		}
+    if (props.onAfterChooseCharacterDone) {
+      props.onAfterChooseCharacterDone()
+    }
         
-	}
+  }
 
-	return (
-		<BaseButton 
-			classes={[props.classes, 'character-details__play'].join(' ')} 
-			onClick={ handleClick }
-			disabled={disable}>
-			{ props.children }
-		</BaseButton>
-	)
+  return (
+    <BaseButton 
+      classes={[props.classes, 'character-details__play'].join(' ')} 
+      onClick={ handleClick }
+      disabled={disable}>
+      { props.children }
+    </BaseButton>
+  )
 }
 
 export default ChooseCharacter

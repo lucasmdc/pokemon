@@ -7,13 +7,13 @@ import { ThemeContext } from './provider/theme'
 import './assets/global.css'
 
 const App = () => {
-	const { name } = useContext(ThemeContext)
+  const { name } = useContext(ThemeContext)
 
-	return (
-		<BaseContainer classTheme={name}>
-			<Routes />
-		</BaseContainer>
-	)
+  return (
+    <BaseContainer classTheme={name}>
+      <Routes />
+    </BaseContainer>
+  )
 }
 
 export default App
