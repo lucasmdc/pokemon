@@ -8,7 +8,7 @@ import './styles.css'
 
 import pokemon from '../../assets/images/pokemon.jpg'
 
-export default function Home() {
+const Home = () => {
 	const { themeDispatch } = useContext(ThemeContext)
 	const history = useHistory()
 	const location = useLocation()
@@ -17,9 +17,9 @@ export default function Home() {
 		history.push('/character-details')
 	}
 
-	useEffect(function(){
-		themeDispatch({type:'setName', payload: ''})
-	},[location, themeDispatch])
+	useEffect(function () {
+		themeDispatch({ type: 'setName', payload: '' })
+	}, [location, themeDispatch])
 
 	return (
 		<section className="home">
@@ -29,18 +29,20 @@ export default function Home() {
 						<span>Welcome to </span>
 						<h1 className="home__brand">Pokémon</h1>
 					</div>
-					<img src={pokemon} 
+					<img src={pokemon}
 						alt="pokémon - primeira geração"
 					/>
 					<h4 className="home__subtitle">KNOW WHAT WILL BE YOURS</h4>
 				</div>
-				<ChooseCharacter 
-					classes="home__start" 
-					onAfterChooseCharacterDone={ handleOnAfterChooseCharacterDone }
+				<ChooseCharacter
+					classes="home__start"
+					onAfterChooseCharacterDone={handleOnAfterChooseCharacterDone}
 				>
-                        S T A R T
+					S T A R T
 				</ChooseCharacter>
 			</div>
 		</section>
 	)
 }
+
+export default Home

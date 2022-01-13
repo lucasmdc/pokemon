@@ -10,7 +10,7 @@ import { getImage } from '../../polices'
 
 import './styles.css'
 
-export default function CharacterDetail() {
+const CharacterDetail = () => {
 	const { name } = useContext(ThemeContext)
 	const [imageUrl, setImageUrl] = useState('')
 	const history = useHistory()
@@ -48,3 +48,5 @@ export default function CharacterDetail() {
 		</section>
 	)
 }
+
+export default CharacterDetail 

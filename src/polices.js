@@ -16,11 +16,11 @@ const images = {
 	bulbasaur,
 	pikachu
 }
-  
-export const getTheme = (name) => {
+
+export const getTheme = name => {
 	return themes[name] || ''
 }
 
-export const getImage = (name) => {
-	return images[name] || '' 
+export const getImage = name => {
+	return images[name] || ''
 }

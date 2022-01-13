@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom'
 import { ThemeProvider } from './provider/theme'
 import App from 'App'
 
-
 ReactDOM.render(
 	<ThemeProvider>
 		<React.StrictMode>
@@ -13,5 +12,3 @@ ReactDOM.render(
 	</ThemeProvider>,
 	document.getElementById('root')
 )
-
-

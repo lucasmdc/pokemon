@@ -6,16 +6,16 @@ const initialState = {
 	name: ''
 }
 
-function reducer (state, action) {
+function reducer(state, action) {
 	switch (action.type) {
-	case 'setName':
-		return updateTheme(state, 'name', action.payload)
-	default:
-		return state
+		case 'setName':
+			return updateTheme(state, 'name', action.payload)
+		default:
+			return state
 	}
 }
 
-function updateTheme (state, key, value) {
+function updateTheme(state, key, value) {
 	return ({
 		...state,
 		[key]: value
@@ -25,13 +25,12 @@ function updateTheme (state, key, value) {
 export const ThemeProvider = props => {
 	const [state, dispatch] = useReducer(reducer, initialState)
 
-    
 	return (
 		<ThemeContext.Provider value={{
 			name: state.name,
 			themeDispatch: dispatch
 		}}>
-			{ props.children }
+			{props.children}
 		</ThemeContext.Provider>
 	)
 }
