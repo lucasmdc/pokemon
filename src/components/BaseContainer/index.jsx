@@ -5,17 +5,17 @@ import { getTheme } from '../../polices'
 import './styles.css'
 
 export default function BaseContainer(props) {
-    const [classes, setClasses] = useState('base-container')
+	const [classes, setClasses] = useState('base-container')
     
-    useEffect(function () {
-        const theme = getTheme(props.classTheme)
+	useEffect(function () {
+		const theme = getTheme(props.classTheme)
 
-        setClasses(`${theme} base-container`)
-    },[props.classTheme])
+		setClasses(`${theme} base-container`)
+	},[props.classTheme])
 
-    return (
-        <div className={classes}>
-            { props.children }
-        </div>
-    )
+	return (
+		<div className={classes}>
+			{ props.children }
+		</div>
+	)
 } 
